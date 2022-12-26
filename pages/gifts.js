@@ -100,6 +100,7 @@ export default function Gifts() {
           className="result"
           dangerouslySetInnerHTML={{ __html: result }}
         />
+        <a href="/">Go back</a>
       </main>
     </div>
   );

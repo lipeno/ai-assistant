@@ -40,11 +40,10 @@ export default function Assistant() {
           <input
             type="text"
             name="hobbies"
-            placeholder="Type your prompt..."
+            placeholder="Type your prompt... eg. Explain quantum computing in simple terms"
             value={prompt}
             onChange={(e) => setPrompt(e.target.value)}
           />
-          <div class="explainer">eg. Explain quantum computing in simple terms</div>
           <input type="submit" value="Send" />
         </form>
         {loading && (
@@ -56,6 +55,7 @@ export default function Assistant() {
           className="result"
           dangerouslySetInnerHTML={{ __html: result }}
         />
+        <a href="/">Go back</a>
       </main>
     </div>
   );
