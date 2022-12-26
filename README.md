@@ -1,6 +1,6 @@
-# OpenAI API Quickstart - Node.js example app
+# - Christmas gifts recommender
 
-This is a Christmas gift ideas generator app made with [OpenAI API ](https://beta.openai.com/docs/quickstart), [Next.js](https://nextjs.org/) and [React](https://reactjs.org/).
+This is a Christmas gift ideas generator app made with [OpenAI API ](https://beta.openai.com/docs/quickstart), [Next.js](https://nextjs.org/) and [React](https://reactjs.org/), built on top of the OpenAI API Quickstart example.
 
 ## Setup
 
