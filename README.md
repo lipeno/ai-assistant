@@ -1,6 +1,11 @@
-# Christmas gifts recommender
+# AI assistant based on OpenAI API
 
-This is a Christmas gift ideas generator app made with [OpenAI API ](https://beta.openai.com/docs/quickstart), [Next.js](https://nextjs.org/) and [React](https://reactjs.org/), built on top of the OpenAI API Quickstart example.
+There are 2 features of the app:
+- Prompt-answering assistant
+- Gift ideas recommender
+
+## Tech stack
+Made with [OpenAI API ](https://beta.openai.com/docs/quickstart), [Next.js](https://nextjs.org/) and [React](https://reactjs.org/), built on top of the OpenAI API Quickstart example.
 
 ## Setup
 
