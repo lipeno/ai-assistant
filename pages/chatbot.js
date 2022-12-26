@@ -8,18 +8,6 @@ export default function Chatbot () {
   ]);
 
   async function handleSendMessage (text) {
-    const newMessageChatbot = await getCompletionData(text);
-    const newMessageUser = {
-      id: messages.length + 1,
-      username: 'Me',
-      text,
-    };
-
-    setMessages([...messages, newMessageUser]);
-    setMessages([...messages, newMessageChatbot]);
-  };
-
-  async function getCompletionData (text) {
     const prompt = text;
     const response = await fetch('/api/generate-completion', {
       method: 'POST',
@@ -30,13 +18,21 @@ export default function Chatbot () {
     });
     const promptResponse = await response.json();
     const textResponse = await promptResponse.result.replaceAll('\n', '');
-    const newMessageChatbot = {
+
+    const newMessageUser = {
       id: messages.length + 1,
-      username: 'Chatbot',
-      textResponse,
+      username: 'Me',
+      text,
     };
-    return newMessageChatbot;
-  }
+
+    const newMessageChatbot = {
+      id: messages.length + 2,
+      username: 'Chatbot',
+      text: textResponse,
+    };
+
+    setMessages([...messages, newMessageUser, newMessageChatbot]);
+  };
 
   return (
     <main className="main">
