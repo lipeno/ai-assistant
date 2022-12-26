@@ -26,7 +26,7 @@ const Messages = ({ messages, onSendMessage }) => {
           type="text"
           value={message}
           onChange={handleChange}
-          placeholder="Type a message..."
+          placeholder="Type a message... eg. Explain quantum computing in simple terms"
         />
         <input type="submit" value="Send" />
       </form>
