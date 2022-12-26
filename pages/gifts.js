@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
 import { useState } from 'react';
-import styles from './index.module.css';
 
 export default function Gifts() {
   const [gender, setGender] = useState('man');
@@ -38,7 +37,7 @@ export default function Gifts() {
         <title>Christmas gift generator</title>
       </Head>
 
-      <main className={styles.main}>
+      <main className="main">
         <h3>Christmas gift generator 🎁</h3>
         <form onSubmit={onSubmit}>
           <label>For who is the gift?</label>
@@ -98,7 +97,7 @@ export default function Gifts() {
           </div>
         )}
         <div
-          className={styles.result}
+          className="result"
           dangerouslySetInnerHTML={{ __html: result }}
         />
       </main>

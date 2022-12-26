@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
 import { useState } from 'react';
-import styles from './index.module.css';
 
 export default function Home() {
   return (
@@ -10,7 +9,7 @@ export default function Home() {
         <title>OpenAI explorations</title>
       </Head>
 
-      <main className={styles.main}>
+      <main className="main">
         <h3>OpenAI apps</h3>
         <a href="/assistant">AI Assistant</a>
         <a href="/gifts">Gifts Recommender</a>

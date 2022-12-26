@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
 import { useState } from 'react';
-import styles from './index.module.css';
 
 export default function Assistant() {
   const [prompt, setPrompt] = useState('');
@@ -34,7 +33,7 @@ export default function Assistant() {
         <title>AI Assistant</title>
       </Head>
 
-      <main className={styles.main}>
+      <main className="main">
         <h3>AI Assistant</h3>
         <form onSubmit={onSubmit}>      
           <label>Your message</label>
@@ -45,16 +44,16 @@ export default function Assistant() {
             value={prompt}
             onChange={(e) => setPrompt(e.target.value)}
           />
-          eg. Explain quantum computing in simple terms
+          <div class="explainer">eg. Explain quantum computing in simple terms</div>
           <input type="submit" value="Send" />
         </form>
         {loading && (
           <div> 
-            <h3>Writing...</h3>
+            <h3>Loading...</h3>
           </div>
         )}
         <div
-          className={styles.result}
+          className="result"
           dangerouslySetInnerHTML={{ __html: result }}
         />
       </main>
