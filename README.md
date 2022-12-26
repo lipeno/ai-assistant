@@ -1,9 +1,9 @@
 # Virtual assistants based on OpenAI API
 
-There are 2 features of the app:
+It includes:
+- AI Chatbot
 - Prompt-answering assistant
 - Gift ideas recommender
-- AI Chatbot
 
 ## Tech stack
 Made with [OpenAI API ](https://beta.openai.com/docs/quickstart), [Next.js](https://nextjs.org/) and [React](https://reactjs.org/), built on top of the OpenAI API Quickstart example.
